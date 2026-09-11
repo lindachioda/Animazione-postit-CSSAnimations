@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    width: 220px;
+    height: 100px;
+    margin: 15px;
+    border: 1px solid rgb(210, 210, 210);
+    padding-top:40px;
+    box-shadow: inset -3px -20px 40px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2, p {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.box1, .box5, .box7 {
+    background-color: rgb(255, 255, 212);
+    transform: rotate(354deg)
+}
+
+.box2, .box4, .box8 {
+    background-color: rgb(210 255 210);
+    transform: rotate(4deg);
+}
+
+.box3, .box6 {
+    background-color: rgb(234 223 255);
+    transform: rotate(348deg);
+}
+
+.postit:hover {
+    transform: rotate(0deg) scale(1.3);
+}
